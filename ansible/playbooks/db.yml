@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+
+  vars_files:
+    - "../vars/pkg_versions.yml"
+
+  become: true
+  become_method: sudo
+
+  roles:
+    - role: mysql

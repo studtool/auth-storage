@@ -1,0 +1,9 @@
+---
+
+- name: Install MySQL YUM repository
+  yum:
+    name: "{{ mysql.rpm }}"
+
+- name: Install MySQL
+  yum:
+    name: mysql-community-server
